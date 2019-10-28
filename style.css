@@ -21,6 +21,8 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
+    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+    
 }
 
 .main {
@@ -62,13 +64,56 @@ body {
     color: #009999;
 }
 
-/* Ocean */
+/* social button */
 
-html, body { height: 100%; }
-body {
-  background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
-  overflow: hidden;
+.center {
+  display: flex;
+  margin: 5% auto;
 }
+
+#social-test {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+
+li {
+  color: #015871;
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  /* padding: 1%; */
+  border: 1px solid #015871;
+  cursor: pointer;
+  /* margin-left: 10px; */
+  /* margin-bottom: 20px; */
+  transition: ease .3s;
+}
+
+li:hover {
+  color: #015871;
+  border: 1px solid #015871;
+}
+
+a {
+  color: #015871;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.social:hover > li {
+  opacity: 0.5;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
+}
+
+/* Ocean */
 
 .ocean { 
   height: 5%;
@@ -112,3 +157,5 @@ body {
     transform: translate3d(0,5px,0);
   }
 }
+
+
